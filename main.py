@@ -63,7 +63,7 @@ while True:
                     speed_x = 5
             elif event.key == pygame.K_RETURN:
                 player_color = RED
-                if player.collidepoint(attacking_enemy[2].center):
+                if player.colliderect(attacking_enemy[2]):
                     score += 100
                     print(f"KILL! Score: {score}")
                     enemies.remove(attacking_enemy)
