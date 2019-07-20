@@ -100,7 +100,7 @@ while True:
             speed_x = 1
         if y >= background_size[1]:
             speed_y = -1
-        if y == 0:
+        if y <= 0:
             speed_y = 1
         x += speed_x
         y += speed_y
