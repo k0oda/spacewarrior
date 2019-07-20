@@ -29,7 +29,7 @@ score = 0
 
 def init_enemies():
     for enemy in range(0, 10):
-        new_enemy_pos_y = random.randint(3, background_size[1])
+        new_enemy_pos_y = random.randint(5, background_size[1] - 5)
         new_enemy_pos_x = background_size[0] + (background_size[0] / 2 / 2)
         enemy_rect = pygame.Rect(new_enemy_pos_x, new_enemy_pos_y, ENEMY_SIZE[1], ENEMY_SIZE[0])
         new_enemy = [new_enemy_pos_y, new_enemy_pos_x, enemy_rect]
